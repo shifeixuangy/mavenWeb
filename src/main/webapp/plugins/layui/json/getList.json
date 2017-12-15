@@ -1,0 +1,715 @@
+{
+  "data": {
+	"mine": {
+	  "username": "wang",
+	  "id": "0",
+	  "state": "hide",
+	  "avatar": "http://tva3.sinaimg.cn/crop.0.0.512.512.180/8693225ajw8f2rt20ptykj20e80e8weu.jpg",
+	  "sign": "我一生优柔寡断的，都是关于你的执迷不悟。"
+	},
+	"friend": [
+	  {
+		"groupname": "贵阳市",
+		"id": "1",
+		"online": 2,
+		"list": [
+		  {
+			"username": "花溪区国土平板终端",
+			"id": "20",
+			"state": "3",
+			"avatar": "http://tva3.sinaimg.cn/crop.0.0.512.512.180/8693225ajw8f2rt20ptykj20e80e8weu.jpg",
+			"sign": ""
+		  },
+		  {
+			"username": "石板镇国土平板终端",
+			"id": "21",
+			"state": "3",
+			"avatar": "http://tva3.sinaimg.cn/crop.0.0.512.512.180/8693225ajw8f2rt20ptykj20e80e8weu.jpg",
+			"sign": ""
+		  },
+		  {
+			"username": "孟关乡国土平板终端",
+			"id": "22",
+			"state": "3",
+			"avatar": "http://tva3.sinaimg.cn/crop.0.0.512.512.180/8693225ajw8f2rt20ptykj20e80e8weu.jpg",
+			"sign": ""
+		  },
+		  {
+			"username": "中心片区平板终端",
+			"id": "23",
+			"state": "3",
+			"avatar": "http://tva3.sinaimg.cn/crop.0.0.512.512.180/8693225ajw8f2rt20ptykj20e80e8weu.jpg",
+			"sign": ""
+		  },
+		  {
+			"username": "麦坪镇国土平板终端",
+			"id": "24",
+			"state": "3",
+			"avatar": "http://tva3.sinaimg.cn/crop.0.0.512.512.180/8693225ajw8f2rt20ptykj20e80e8weu.jpg",
+			"sign": ""
+		  },
+		  {
+			"username": "黔陶乡国土平板终端",
+			"id": "25",
+			"state": "3",
+			"avatar": "http://tva3.sinaimg.cn/crop.0.0.512.512.180/8693225ajw8f2rt20ptykj20e80e8weu.jpg",
+			"sign": ""
+		  },
+		  {
+			"username": "青岩镇国土平板终端",
+			"id": "26",
+			"state": "3",
+			"avatar": "http://tva3.sinaimg.cn/crop.0.0.512.512.180/8693225ajw8f2rt20ptykj20e80e8weu.jpg",
+			"sign": ""
+		  },
+		  {
+			"username": "党武镇国土平板终端",
+			"id": "31",
+			"state": "3",
+			"avatar": "http://tva3.sinaimg.cn/crop.0.0.512.512.180/8693225ajw8f2rt20ptykj20e80e8weu.jpg",
+			"sign": ""
+		  },
+		  {
+			"username": "花溪区国土手持机终端",
+			"id": "34",
+			"state": "3",
+			"avatar": "http://tva3.sinaimg.cn/crop.0.0.512.512.180/8693225ajw8f2rt20ptykj20e80e8weu.jpg",
+			"sign": ""
+		  },
+		  {
+			"username": "普定县国土手持机终端",
+			"id": "38",
+			"state": "3",
+			"avatar": "http://tva3.sinaimg.cn/crop.0.0.512.512.180/8693225ajw8f2rt20ptykj20e80e8weu.jpg",
+			"sign": ""
+		  },
+		  {
+			"username": "南明区国土平板终端",
+			"id": "186",
+			"state": "3",
+			"avatar": "http://tva3.sinaimg.cn/crop.0.0.512.512.180/8693225ajw8f2rt20ptykj20e80e8weu.jpg",
+			"sign": ""
+		  },
+		  {
+			"username": "小碧乡国土平板终端",
+			"id": "188",
+			"state": "3",
+			"avatar": "http://tva3.sinaimg.cn/crop.0.0.512.512.180/8693225ajw8f2rt20ptykj20e80e8weu.jpg",
+			"sign": ""
+		  },
+		  {
+			"username": "永乐乡国土平板终端",
+			"id": "189",
+			"state": "3",
+			"avatar": "http://tva3.sinaimg.cn/crop.0.0.512.512.180/8693225ajw8f2rt20ptykj20e80e8weu.jpg",
+			"sign": ""
+		  },
+		  {
+			"username": "后巢乡国土平板终端",
+			"id": "190",
+			"state": "3",
+			"avatar": "http://tva3.sinaimg.cn/crop.0.0.512.512.180/8693225ajw8f2rt20ptykj20e80e8weu.jpg",
+			"sign": ""
+		  },
+		  {
+			"username": "南明区国土手持机终端",
+			"id": "191",
+			"state": "3",
+			"avatar": "http://tva3.sinaimg.cn/crop.0.0.512.512.180/8693225ajw8f2rt20ptykj20e80e8weu.jpg",
+			"sign": ""
+		  },
+		  {
+			"username": "国土手持机终端B30",
+			"id": "1174",
+			"state": "3",
+			"avatar": "http://tva3.sinaimg.cn/crop.0.0.512.512.180/8693225ajw8f2rt20ptykj20e80e8weu.jpg",
+			"sign": ""
+		  },
+		  {
+			"username": "国土手持机终端B20",
+			"id": "1175",
+			"state": "3",
+			"avatar": "http://tva3.sinaimg.cn/crop.0.0.512.512.180/8693225ajw8f2rt20ptykj20e80e8weu.jpg",
+			"sign": ""
+		  },
+		  {
+			"username": "南明区云关红岩手持机3",
+			"id": "12951",
+			"state": "3",
+			"avatar": "http://tva3.sinaimg.cn/crop.0.0.512.512.180/8693225ajw8f2rt20ptykj20e80e8weu.jpg",
+			"sign": ""
+		  },
+		  {
+			"username": "国土平板移动终端",
+			"id": "12952",
+			"state": "3",
+			"avatar": "http://tva3.sinaimg.cn/crop.0.0.512.512.180/8693225ajw8f2rt20ptykj20e80e8weu.jpg",
+			"sign": ""
+		  },
+		  {
+			"username": "平板移动终端999991",
+			"id": "12953",
+			"state": "3",
+			"avatar": "http://tva3.sinaimg.cn/crop.0.0.512.512.180/8693225ajw8f2rt20ptykj20e80e8weu.jpg",
+			"sign": ""
+		  },
+		  {
+			"username": "平板移动终端999992",
+			"id": "12954",
+			"state": "3",
+			"avatar": "http://tva3.sinaimg.cn/crop.0.0.512.512.180/8693225ajw8f2rt20ptykj20e80e8weu.jpg",
+			"sign": ""
+		  },
+		  {
+			"username": "平板移动终端999993",
+			"id": "12955",
+			"state": "3",
+			"avatar": "http://tva3.sinaimg.cn/crop.0.0.512.512.180/8693225ajw8f2rt20ptykj20e80e8weu.jpg",
+			"sign": ""
+		  },
+		  {
+			"username": "平板移动终端999994",
+			"id": "12956",
+			"state": "3",
+			"avatar": "http://tva3.sinaimg.cn/crop.0.0.512.512.180/8693225ajw8f2rt20ptykj20e80e8weu.jpg",
+			"sign": ""
+		  },
+		  {
+			"username": "平板移动终端999995",
+			"id": "12957",
+			"state": "3",
+			"avatar": "http://tva3.sinaimg.cn/crop.0.0.512.512.180/8693225ajw8f2rt20ptykj20e80e8weu.jpg",
+			"sign": ""
+		  },
+		  {
+			"username": "平板移动终端999996",
+			"id": "12958",
+			"state": "3",
+			"avatar": "http://tva3.sinaimg.cn/crop.0.0.512.512.180/8693225ajw8f2rt20ptykj20e80e8weu.jpg",
+			"sign": ""
+		  },
+		  {
+			"username": "1130000",
+			"id": "12959",
+			"state": "3",
+			"avatar": "http://tva3.sinaimg.cn/crop.0.0.512.512.180/8693225ajw8f2rt20ptykj20e80e8weu.jpg",
+			"sign": ""
+		  },
+		  {
+			"username": "1130001",
+			"id": "12960",
+			"state": "3",
+			"avatar": "http://tva3.sinaimg.cn/crop.0.0.512.512.180/8693225ajw8f2rt20ptykj20e80e8weu.jpg",
+			"sign": ""
+		  },
+		  {
+			"username": "1130002",
+			"id": "12961",
+			"state": "3",
+			"avatar": "http://tva3.sinaimg.cn/crop.0.0.512.512.180/8693225ajw8f2rt20ptykj20e80e8weu.jpg",
+			"sign": ""
+		  },
+		  {
+			"username": "1130004",
+			"id": "12962",
+			"state": "3",
+			"avatar": "http://tva3.sinaimg.cn/crop.0.0.512.512.180/8693225ajw8f2rt20ptykj20e80e8weu.jpg",
+			"sign": ""
+		  },
+		  {
+			"username": "1130005",
+			"id": "12963",
+			"state": "3",
+			"avatar": "http://tva3.sinaimg.cn/crop.0.0.512.512.180/8693225ajw8f2rt20ptykj20e80e8weu.jpg",
+			"sign": ""
+		  },
+		  {
+			"username": "1130006",
+			"id": "12964",
+			"state": "3",
+			"avatar": "http://tva3.sinaimg.cn/crop.0.0.512.512.180/8693225ajw8f2rt20ptykj20e80e8weu.jpg",
+			"sign": ""
+		  },
+		  {
+			"username": "d",
+			"id": "12965",
+			"state": "3",
+			"avatar": "http://tva3.sinaimg.cn/crop.0.0.512.512.180/8693225ajw8f2rt20ptykj20e80e8weu.jpg",
+			"sign": ""
+		  },
+		  {
+			"username": "企鹅去微软",
+			"id": "12967",
+			"state": "3",
+			"avatar": "http://tva3.sinaimg.cn/crop.0.0.512.512.180/8693225ajw8f2rt20ptykj20e80e8weu.jpg",
+			"sign": ""
+		  },
+		  {
+			"username": "123124",
+			"id": "12968",
+			"state": "3",
+			"avatar": "http://tva3.sinaimg.cn/crop.0.0.512.512.180/8693225ajw8f2rt20ptykj20e80e8weu.jpg",
+			"sign": ""
+		  },
+		  {
+			"username": "dwdw3f313",
+			"id": "12969",
+			"state": "3",
+			"avatar": "http://tva3.sinaimg.cn/crop.0.0.512.512.180/8693225ajw8f2rt20ptykj20e80e8weu.jpg",
+			"sign": ""
+		  },
+		  {
+			"username": "开阳金钟镇龙井湾滑坡",
+			"id": "12971",
+			"state": "3",
+			"avatar": "http://tva3.sinaimg.cn/crop.0.0.512.512.180/8693225ajw8f2rt20ptykj20e80e8weu.jpg",
+			"sign": ""
+		  },
+		  {
+			"username": "开阳县金钟镇牛背崩塌体",
+			"id": "12974",
+			"state": "3",
+			"avatar": "http://tva3.sinaimg.cn/crop.0.0.512.512.180/8693225ajw8f2rt20ptykj20e80e8weu.jpg",
+			"sign": ""
+		  },
+		  {
+			"username": "开阳县金钟镇官司坝泥石流",
+			"id": "12975",
+			"state": "3",
+			"avatar": "http://tva3.sinaimg.cn/crop.0.0.512.512.180/8693225ajw8f2rt20ptykj20e80e8weu.jpg",
+			"sign": ""
+		  }
+		]
+	  },
+	  {
+		"groupname": "六盘水市",
+		"id": "2",
+		"online": 2,
+		"list": [
+		  {
+			"username": "盘县松河乡采空区塌陷",
+			"id": "12976",
+			"state": "3",
+			"avatar": "http://tva3.sinaimg.cn/crop.0.0.512.512.180/8693225ajw8f2rt20ptykj20e80e8weu.jpg",
+			"sign": ""
+		  },
+		  {
+			"username": "松河龙脖子村老鹰岩崩塌",
+			"id": "12983",
+			"state": "3",
+			"avatar": "http://tva3.sinaimg.cn/crop.0.0.512.512.180/8693225ajw8f2rt20ptykj20e80e8weu.jpg",
+			"sign": ""
+		  }
+		]
+	  },
+	  {
+		"groupname": "遵义市",
+		"id": "3",
+		"online": 2,
+		"list": [
+		  {
+			"username": "道真仡佬族苗族自治县龙井湾滑坡",
+			"id": "12972",
+			"state": "3",
+			"avatar": "http://tva3.sinaimg.cn/crop.0.0.512.512.180/8693225ajw8f2rt20ptykj20e80e8weu.jpg",
+			"sign": ""
+		  },
+		  {
+			"username": "汇川区高坪镇仁江村煤矿3号井地质灾害群",
+			"id": "12977",
+			"state": "3",
+			"avatar": "http://tva3.sinaimg.cn/crop.0.0.512.512.180/8693225ajw8f2rt20ptykj20e80e8weu.jpg",
+			"sign": ""
+		  },
+		  {
+			"username": "桐梓县三合村滑坡体",
+			"id": "12978",
+			"state": "3",
+			"avatar": "http://tva3.sinaimg.cn/crop.0.0.512.512.180/8693225ajw8f2rt20ptykj20e80e8weu.jpg",
+			"sign": ""
+		  },
+		  {
+			"username": "习水县程寨乡滑坡",
+			"id": "12979",
+			"state": "3",
+			"avatar": "http://tva3.sinaimg.cn/crop.0.0.512.512.180/8693225ajw8f2rt20ptykj20e80e8weu.jpg",
+			"sign": ""
+		  },
+		  {
+			"username": "官渡镇和平村老鹰岩崩塌带",
+			"id": "12984",
+			"state": "3",
+			"avatar": "http://tva3.sinaimg.cn/crop.0.0.512.512.180/8693225ajw8f2rt20ptykj20e80e8weu.jpg",
+			"sign": ""
+		  },
+		  {
+			"username": "习水县大石村滑坡带",
+			"id": "12991",
+			"state": "3",
+			"avatar": "http://tva3.sinaimg.cn/crop.0.0.512.512.180/8693225ajw8f2rt20ptykj20e80e8weu.jpg",
+			"sign": ""
+		  }
+		]
+	  },
+	  {
+		"groupname": "安顺市",
+		"id": "4",
+		"online": 2,
+		"list": [
+		  {
+			"username": "西秀区国土手持机终端",
+			"id": "35",
+			"state": "3",
+			"avatar": "http://tva3.sinaimg.cn/crop.0.0.512.512.180/8693225ajw8f2rt20ptykj20e80e8weu.jpg",
+			"sign": ""
+		  },
+		  {
+			"username": "西秀区国土平板端",
+			"id": "36",
+			"state": "3",
+			"avatar": "http://tva3.sinaimg.cn/crop.0.0.512.512.180/8693225ajw8f2rt20ptykj20e80e8weu.jpg",
+			"sign": ""
+		  },
+		  {
+			"username": "普定县国土平板端",
+			"id": "37",
+			"state": "3",
+			"avatar": "http://tva3.sinaimg.cn/crop.0.0.512.512.180/8693225ajw8f2rt20ptykj20e80e8weu.jpg",
+			"sign": ""
+		  },
+		  {
+			"username": "普定县国土平板终端",
+			"id": "39",
+			"state": "3",
+			"avatar": "http://tva3.sinaimg.cn/crop.0.0.512.512.180/8693225ajw8f2rt20ptykj20e80e8weu.jpg",
+			"sign": ""
+		  },
+		  {
+			"username": "镇宁布依国土平板终端",
+			"id": "40",
+			"state": "3",
+			"avatar": "http://tva3.sinaimg.cn/crop.0.0.512.512.180/8693225ajw8f2rt20ptykj20e80e8weu.jpg",
+			"sign": ""
+		  },
+		  {
+			"username": "镇宁布依国土手持机终端",
+			"id": "64",
+			"state": "3",
+			"avatar": "http://tva3.sinaimg.cn/crop.0.0.512.512.180/8693225ajw8f2rt20ptykj20e80e8weu.jpg",
+			"sign": ""
+		  },
+		  {
+			"username": "关岭布依国土平板终端",
+			"id": "68",
+			"state": "3",
+			"avatar": "http://tva3.sinaimg.cn/crop.0.0.512.512.180/8693225ajw8f2rt20ptykj20e80e8weu.jpg",
+			"sign": ""
+		  },
+		  {
+			"username": "关岭布依国土手持机终端",
+			"id": "69",
+			"state": "3",
+			"avatar": "http://tva3.sinaimg.cn/crop.0.0.512.512.180/8693225ajw8f2rt20ptykj20e80e8weu.jpg",
+			"sign": ""
+		  },
+		  {
+			"username": "紫云布依国土平板终端",
+			"id": "70",
+			"state": "3",
+			"avatar": "http://tva3.sinaimg.cn/crop.0.0.512.512.180/8693225ajw8f2rt20ptykj20e80e8weu.jpg",
+			"sign": ""
+		  },
+		  {
+			"username": "紫云布依国土手持机终端",
+			"id": "71",
+			"state": "3",
+			"avatar": "http://tva3.sinaimg.cn/crop.0.0.512.512.180/8693225ajw8f2rt20ptykj20e80e8weu.jpg",
+			"sign": ""
+		  },
+		  {
+			"username": "白云镇国土平板终端",
+			"id": "265",
+			"state": "3",
+			"avatar": "http://tva3.sinaimg.cn/crop.0.0.512.512.180/8693225ajw8f2rt20ptykj20e80e8weu.jpg",
+			"sign": ""
+		  },
+		  {
+			"username": "城关镇国土平板终端",
+			"id": "266",
+			"state": "3",
+			"avatar": "http://tva3.sinaimg.cn/crop.0.0.512.512.180/8693225ajw8f2rt20ptykj20e80e8weu.jpg",
+			"sign": ""
+		  },
+		  {
+			"username": "高峰镇国土平板终端",
+			"id": "267",
+			"state": "3",
+			"avatar": "http://tva3.sinaimg.cn/crop.0.0.512.512.180/8693225ajw8f2rt20ptykj20e80e8weu.jpg",
+			"sign": ""
+		  },
+		  {
+			"username": "天龙镇国土平板终端",
+			"id": "268",
+			"state": "3",
+			"avatar": "http://tva3.sinaimg.cn/crop.0.0.512.512.180/8693225ajw8f2rt20ptykj20e80e8weu.jpg",
+			"sign": ""
+		  },
+		  {
+			"username": "夏云镇国土平板终端",
+			"id": "269",
+			"state": "3",
+			"avatar": "http://tva3.sinaimg.cn/crop.0.0.512.512.180/8693225ajw8f2rt20ptykj20e80e8weu.jpg",
+			"sign": ""
+		  },
+		  {
+			"username": "马场镇国土平板终端",
+			"id": "270",
+			"state": "3",
+			"avatar": "http://tva3.sinaimg.cn/crop.0.0.512.512.180/8693225ajw8f2rt20ptykj20e80e8weu.jpg",
+			"sign": ""
+		  },
+		  {
+			"username": "乐平乡国土平板终端",
+			"id": "271",
+			"state": "3",
+			"avatar": "http://tva3.sinaimg.cn/crop.0.0.512.512.180/8693225ajw8f2rt20ptykj20e80e8weu.jpg",
+			"sign": ""
+		  },
+		  {
+			"username": "齐伯乡国土平板终端",
+			"id": "272",
+			"state": "3",
+			"avatar": "http://tva3.sinaimg.cn/crop.0.0.512.512.180/8693225ajw8f2rt20ptykj20e80e8weu.jpg",
+			"sign": ""
+		  },
+		  {
+			"username": "十字乡国土平板终端",
+			"id": "273",
+			"state": "3",
+			"avatar": "http://tva3.sinaimg.cn/crop.0.0.512.512.180/8693225ajw8f2rt20ptykj20e80e8weu.jpg",
+			"sign": ""
+		  },
+		  {
+			"username": "羊昌乡国土平板终端",
+			"id": "274",
+			"state": "3",
+			"avatar": "http://tva3.sinaimg.cn/crop.0.0.512.512.180/8693225ajw8f2rt20ptykj20e80e8weu.jpg",
+			"sign": ""
+		  },
+		  {
+			"username": "布依苗族自治县沙子乡龙井湾滑坡",
+			"id": "12973",
+			"state": "3",
+			"avatar": "http://tva3.sinaimg.cn/crop.0.0.512.512.180/8693225ajw8f2rt20ptykj20e80e8weu.jpg",
+			"sign": ""
+		  },
+		  {
+			"username": "平坝县四家村滑坡群",
+			"id": "12982",
+			"state": "3",
+			"avatar": "http://tva3.sinaimg.cn/crop.0.0.512.512.180/8693225ajw8f2rt20ptykj20e80e8weu.jpg",
+			"sign": ""
+		  },
+		  {
+			"username": "普定县猫洞乡老鹰岩崩塌",
+			"id": "12985",
+			"state": "3",
+			"avatar": "http://tva3.sinaimg.cn/crop.0.0.512.512.180/8693225ajw8f2rt20ptykj20e80e8weu.jpg",
+			"sign": ""
+		  }
+		]
+	  },
+	  {
+		"groupname": "铜仁地区",
+		"id": "5",
+		"online": 2,
+		"list": [
+		  {
+			"username": "南县思唐镇远东村老鹰岩崩塌",
+			"id": "12986",
+			"state": "3",
+			"avatar": "http://tva3.sinaimg.cn/crop.0.0.512.512.180/8693225ajw8f2rt20ptykj20e80e8weu.jpg",
+			"sign": ""
+		  },
+		  {
+			"username": "铜仁市思南县危岩体",
+			"id": "12989",
+			"state": "3",
+			"avatar": "http://tva3.sinaimg.cn/crop.0.0.512.512.180/8693225ajw8f2rt20ptykj20e80e8weu.jpg",
+			"sign": ""
+		  },
+		  {
+			"username": "思思南县凉水井镇",
+			"id": "12990",
+			"state": "3",
+			"avatar": "http://tva3.sinaimg.cn/crop.0.0.512.512.180/8693225ajw8f2rt20ptykj20e80e8weu.jpg",
+			"sign": ""
+		  },
+		  {
+			"username": "印江土家苗族自治县峨岭大石村滑坡",
+			"id": "12992",
+			"state": "3",
+			"avatar": "http://tva3.sinaimg.cn/crop.0.0.512.512.180/8693225ajw8f2rt20ptykj20e80e8weu.jpg",
+			"sign": ""
+		  }
+		]
+	  },
+	  {
+		"groupname": "毕节地区",
+		"id": "6",
+		"online": 2,
+		"list": [
+		  {
+			"username": "大方县瓢井镇油沙村老鹰岩崩塌",
+			"id": "12987",
+			"state": "3",
+			"avatar": "http://tva3.sinaimg.cn/crop.0.0.512.512.180/8693225ajw8f2rt20ptykj20e80e8weu.jpg",
+			"sign": ""
+		  },
+		  {
+			"username": "大方县油沙村德兴煤矿滑坡",
+			"id": "12996",
+			"state": "3",
+			"avatar": "http://tva3.sinaimg.cn/crop.0.0.512.512.180/8693225ajw8f2rt20ptykj20e80e8weu.jpg",
+			"sign": ""
+		  },
+		  {
+			"username": "大方县油沙村崩塌体",
+			"id": "12997",
+			"state": "3",
+			"avatar": "http://tva3.sinaimg.cn/crop.0.0.512.512.180/8693225ajw8f2rt20ptykj20e80e8weu.jpg",
+			"sign": ""
+		  },
+		  {
+			"username": "大方县瓢井镇云龙村云龙山崩塌体",
+			"id": "12998",
+			"state": "3",
+			"avatar": "http://tva3.sinaimg.cn/crop.0.0.512.512.180/8693225ajw8f2rt20ptykj20e80e8weu.jpg",
+			"sign": ""
+		  },
+		  {
+			"username": "纳雍县鬃岭镇崩塌体",
+			"id": "12999",
+			"state": "3",
+			"avatar": "http://tva3.sinaimg.cn/crop.0.0.512.512.180/8693225ajw8f2rt20ptykj20e80e8weu.jpg",
+			"sign": ""
+		  },
+		  {
+			"username": "威宁彝族回族苗族自治县猴场镇崩塌体",
+			"id": "13000",
+			"state": "3",
+			"avatar": "http://tva3.sinaimg.cn/crop.0.0.512.512.180/8693225ajw8f2rt20ptykj20e80e8weu.jpg",
+			"sign": ""
+		  },
+		  {
+			"username": "赫章县野马川镇乌木铺岩质高边坡",
+			"id": "13001",
+			"state": "3",
+			"avatar": "http://tva3.sinaimg.cn/crop.0.0.512.512.180/8693225ajw8f2rt20ptykj20e80e8weu.jpg",
+			"sign": ""
+		  }
+		]
+	  },
+	  {
+		"groupname": "黔西南布依族苗族自治州",
+		"id": "7",
+		"online": 2,
+		"list": [
+		  {
+			"username": "兴仁县锁寨村伍家坡崩塌",
+			"id": "12993",
+			"state": "3",
+			"avatar": "http://tva3.sinaimg.cn/crop.0.0.512.512.180/8693225ajw8f2rt20ptykj20e80e8weu.jpg",
+			"sign": ""
+		  },
+		  {
+			"username": "望谟县望谟河泥石流",
+			"id": "12994",
+			"state": "3",
+			"avatar": "http://tva3.sinaimg.cn/crop.0.0.512.512.180/8693225ajw8f2rt20ptykj20e80e8weu.jpg",
+			"sign": ""
+		  },
+		  {
+			"username": "册亨县岩架镇北侧边坡",
+			"id": "12995",
+			"state": "3",
+			"avatar": "http://tva3.sinaimg.cn/crop.0.0.512.512.180/8693225ajw8f2rt20ptykj20e80e8weu.jpg",
+			"sign": ""
+		  }
+		]
+	  },
+	  {
+		"groupname": "黔东南苗族侗族自治州",
+		"id": "8",
+		"online": 2,
+		"list": [
+		  {
+			"username": "麻江县坝芒乡猫头村",
+			"id": "12988",
+			"state": "3",
+			"avatar": "http://tva3.sinaimg.cn/crop.0.0.512.512.180/8693225ajw8f2rt20ptykj20e80e8weu.jpg",
+			"sign": ""
+		  },
+		  {
+			"username": "岑巩县思阳镇大榕村滑坡",
+			"id": "13002",
+			"state": "3",
+			"avatar": "http://tva3.sinaimg.cn/crop.0.0.512.512.180/8693225ajw8f2rt20ptykj20e80e8weu.jpg",
+			"sign": ""
+		  },
+		  {
+			"username": "雷山县乌瓦上寨滑坡",
+			"id": "13003",
+			"state": "3",
+			"avatar": "http://tva3.sinaimg.cn/crop.0.0.512.512.180/8693225ajw8f2rt20ptykj20e80e8weu.jpg",
+			"sign": ""
+		  }
+		]
+	  },
+	  {
+		"groupname": "黔南布依族苗族自治州",
+		"id": "9",
+		"online": 2,
+		"list": [
+		  {
+			"username": "都匀市江洲镇马达岭滑坡",
+			"id": "13004",
+			"state": "3",
+			"avatar": "http://tva3.sinaimg.cn/crop.0.0.512.512.180/8693225ajw8f2rt20ptykj20e80e8weu.jpg",
+			"sign": ""
+		  },
+		  {
+			"username": "都匀市江州镇接娘坪变形体",
+			"id": "13005",
+			"state": "3",
+			"avatar": "http://tva3.sinaimg.cn/crop.0.0.512.512.180/8693225ajw8f2rt20ptykj20e80e8weu.jpg",
+			"sign": ""
+		  },
+		  {
+			"username": "都匀市江州镇立山坡崩塌体",
+			"id": "13006",
+			"state": "3",
+			"avatar": "http://tva3.sinaimg.cn/crop.0.0.512.512.180/8693225ajw8f2rt20ptykj20e80e8weu.jpg",
+			"sign": ""
+		  },
+		  {
+			"username": "都匀市江州镇笕槽冲泥石流",
+			"id": "13007",
+			"state": "3",
+			"avatar": "http://tva3.sinaimg.cn/crop.0.0.512.512.180/8693225ajw8f2rt20ptykj20e80e8weu.jpg",
+			"sign": ""
+		  },
+		  {
+			"username": "瓮安县江界河村滑坡",
+			"id": "13008",
+			"state": "3",
+			"avatar": "http://tva3.sinaimg.cn/crop.0.0.512.512.180/8693225ajw8f2rt20ptykj20e80e8weu.jpg",
+			"sign": ""
+		  }
+		]
+	  }
+	]
+  },
+  "code": 0,
+  "msg": ""
+}

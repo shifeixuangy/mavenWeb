@@ -1,0 +1,186 @@
+.tt-inner{ display:inline-block; line-height:10px;padding-top:5px;}
+.tt-inner img{border:0;}
+.hgtable td{
+
+	
+}
+.hgtable font{
+	color: red;
+	font-weight: bold;
+}
+.hgform label.error{ background: url(../images/icons/error.png) no-repeat 0px 0px;color: Red;padding-left: 20px;font-weight: bold;}        
+.hgform input.error{ border: dashed 1px red;}
+
+.sysVarbar{
+	background-color:#F5F5F5;
+}
+
+.gridSearchBar input{
+	border: 1px solid #ccc;
+}
+
+.gridSearchBar fieldset{
+	background-color: #EEE5DE;height: 50px;
+}
+
+.gridSearchBar1 input{
+	border: 1px solid #ccc;
+}
+.gridSearchBar1 fieldset{
+	background-color: #EEE5DE;height: 100px;
+}
+
+#centerpage_authTable td{
+	border: 1px dashed #aaa;
+}
+
+#centerpage_authTable td.td1{
+	background-color: #ccc;
+}
+
+.m-icon-search{
+	background:url('../images/icons/search.png') no-repeat center center;
+}
+.m-icon-clear{
+	background:url('../images/icons/clear.png') no-repeat center center;
+}
+
+.icon-ok{
+	background:url('../images/icons/accept.gif') no-repeat center center;
+}
+.icon-cancel{
+	background:url('../images/icons/cancel.gif') no-repeat center center;
+}
+.icon-reset{
+	background:url('../images/icons/reset.png') no-repeat center center;
+}
+
+.m-icon-win{
+	background:url('../images/icons/window.png') no-repeat center center;
+}
+.m-icon-drive{
+	background:url('../images/icons/drive.gif') no-repeat center center;
+}
+.m-icon-group{
+	background:url('../images/icons/group.gif') no-repeat center center;
+}
+.m-icon-group2{
+	background:url('../images/icons/group.png') no-repeat center center;
+}
+.m-icon-group-add{
+	background:url('../images/icons/group_add.png') no-repeat center center;
+}
+.m-icon-group-edit{
+	background:url('../images/icons/group_edit.png') no-repeat center center;
+}
+.m-icon-group-del{
+	background:url('../images/icons/group_del.png') no-repeat center center;
+}
+.m-icon-user-red{
+	background:url('../images/icons/user_red.gif') no-repeat center center;
+}
+.m-icon-user-orange{
+	background:url('../images/icons/user_orange.gif') no-repeat center center;
+}
+.m-icon-user-add{
+	background:url('../images/icons/user_add.gif') no-repeat center center;
+}
+.m-icon-tag-parentDept{
+	background:url('../images/icons/parentDept.png') no-repeat center center;
+}
+.m-icon-tag-dept{
+	background:url('../images/icons/dept.png') no-repeat center center;
+}
+.m-icon-tag-green{
+	background:url('../images/icons/tag_green.gif') no-repeat center center;
+}
+.m-icon-tag-purple{
+	background:url('../images/icons/tag_purple.gif') no-repeat center center;
+}
+.m-icon-star{
+	background:url('../images/icons/star.gif') no-repeat center center;
+}
+.m-icon-star-add{
+	background:url('../images/icons/star_add.png') no-repeat center center;
+}
+.m-icon-star-edit{
+	background:url('../images/icons/star_edit.png') no-repeat center center;
+}
+.m-icon-star-del{
+	background:url('../images/icons/star_del.png') no-repeat center center;
+}
+
+.m-icon-tag-add{
+	background:url('../images/icons/tag_blue_add.gif') no-repeat center center;
+}
+.m-icon-tag-edit{
+	background:url('../images/icons/tag_blue_edit.gif') no-repeat center center;
+}
+.m-icon-tag-del{
+	background:url('../images/icons/tag_blue_delete.gif') no-repeat center center;
+}
+.m-icon-tag-red{
+	background:url('../images/icons/tag_red.gif') no-repeat center center;
+}
+.m-icon-pkg{
+	background:url('../images/icons/pkg.gif') no-repeat center center;
+}
+.m-icon-person{
+	background:url('../images/icons/person1.png') no-repeat center center;
+}
+
+.m-icon-person-add{
+	background:url('../images/icons/person_add.png') no-repeat center center;
+}
+.m-icon-person-edit{
+	background:url('../images/icons/person_edit.png') no-repeat center center;
+}
+.m-icon-person-del{
+	background:url('../images/icons/person_del.png') no-repeat center center;
+}
+
+.m-icon-app{
+	background:url('../images/icons/application_form.gif') no-repeat center center;
+}
+.m-icon-app-add{
+	background:url('../images/icons/application_form_add.gif') no-repeat center center;
+}
+.m-icon-app-edit{
+	background:url('../images/icons/application_form_edit.gif') no-repeat center center;
+}
+.m-icon-app-del{
+	background:url('../images/icons/application_form_delete.gif') no-repeat center center;
+}
+.m-icon-personal{
+	background:url('../images/icons/personal.png') no-repeat center center;
+}
+
+.m-icon-key{
+	background:url('../images/icons/key16.png') no-repeat center center;
+}
+.m-icon-edit{
+	background:url('../images/icons/edit16.png') no-repeat center center;
+}
+.m-icon-oper16{
+	background:url('../images/icons/oper16.png') no-repeat center center;
+}
+
+.m-icon-list{
+	background:url('../images/icons/listview.png') no-repeat center center;
+}
+
+.m-icon-key-y{
+	background:url('../images/icons/key_y_16.png') no-repeat center center;
+}
+
+
+.m-icon-arrow_branch{
+	background:url('../images/icons/arrow_branch.gif') no-repeat center center;
+}
+.m-icon-chart_bar{
+	background:url('../images/icons/chart_bar.gif') no-repeat center center;
+}
+.m-icon-door{
+	background:url('../images/icons/door.gif') no-repeat center center;
+}
+

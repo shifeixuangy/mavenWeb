@@ -1,0 +1,4 @@
+1.如果test文件夹不用idea自带的功能make as directory变成test source目录，
+那么test目录里的文件会被编译到classes中，但是垃圾处理系统中，会编译在classes-test中，这是为什么呢？
+2.target的目录感觉毫无作用，启动从tomcat直接用artifacts文件包，但是artifact文件包一般默认不编译在target中，
+那么target毫无作用啊？

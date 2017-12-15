@@ -1,0 +1,24 @@
+@charset "utf-8";
+/*全局 */
+body,div,ul,li { margin:0px; padding:0px;}
+body { background:url(../../images/login/topBj.jpg) #2b72ac top center no-repeat;}
+.bodyDiv { width:100%; height:270px; position:absolute; top:280px; background:#e0e7f1;}
+/*输入DIV*/
+.mainDiv { width:673px; height:320px; margin:0px auto; margin-top:183px; background:url(../../images/login/body.png) no-repeat; position:relative;}
+.logoDiv { width:67px; height:67px; position:absolute; left:50%; top:-33px; margin-left:-37px;}
+.StoresDiv { font-size:18px; color:#fff; position:absolute; top:-22px; right:10px; font-family:微软雅黑;}
+.titleDiv { font-size:28px; color:#2b72ac; width:100%; text-align:center;font-family:微软雅黑; padding-top:38px;height: 58px;}
+.EnterDiv { width:572px; margin:0px auto;}
+.inputText,.inputPass,.inputPass2 { width:260px; height:38px; margin:0px; padding:0px;  margin-top:8px; font-size:16px; color:#8e9399;font-family:微软雅黑; line-height:38px; background:url(../../images/login/user.png) #e0e7f1 10px 7px no-repeat; border:1px solid #e0e7f1; padding-left:50px; float:right; }
+.inputText2 { width:260px; height:38px; margin:0px; padding:0px; margin-top:8px;  font-size:16px; color:#333;font-family:微软雅黑; line-height:38px; background:url(../../images/login/user.png) #fff 10px 7px no-repeat; border:1px solid #e0e7f1; padding-left:50px; float:right; }
+.inputPass { background:url(../../images/login/poss.png) #e0e7f1 10px 7px no-repeat;}
+.inputPass2 { background:url(../../images/login/poss.png) #fff 10px 7px no-repeat;}
+.btnDiv { width:313px; height:38px; margin-top:8px; float:right; font-size:24px; color:#fff;font-family:微软雅黑; background:#2b72ac; border:none; }
+.btnDiv:hover { border: 2px solid #75777f; width:313px; height:38px; margin-top:8px; float:right; font-size:24px; color:#fff;font-family:微软雅黑; background:#019df0; border:none; }
+.bottomDiv { position:absolute; top:540px; width:100%; text-align:center; font-size:13px; color:#abc1d8; line-height:20px; margin-top:30px;}
+.divImage{ width:260px;  height:1px; margin-top:10px; float:left;}
+.divImageImg{width:230px; height:158px; float: left;}
+.captchaDiv{width:312px;  height:46px; float:right;}
+.inputCaptcha2 { width:130px; height:38px; margin:0px; padding:0px;  margin-top:8px; font-size:16px; color:#333;font-family:微软雅黑; line-height:38px; background:url(../../images/login/captcha.png) #fff 10px 7px no-repeat; border:1px solid #e0e7f1; padding-left:50px; float:left; }
+.inputCaptcha { width:130px; height:38px; margin:0px; padding:0px; margin-top:8px; font-size:16px; color:#8e9399;font-family:微软雅黑; line-height:38px; background:url(../../images/login/captcha.png) #e0e7f1 10px 7px no-repeat; border:1px solid #e0e7f1; padding-left:50px; float:left; }
+.captchaImage { width:100px; height:38px; margin:0px; padding:0px; margin-top:8px; float:right; }

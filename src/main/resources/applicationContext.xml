@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:c="http://www.springframework.org/schema/c"
+       xmlns:context="http://www.springframework.org/schema/context" xmlns:facelets="http://java.sun.com/jsf/facelets"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.2.xsd">
+    <import resource="applicationContext-db.xml"/>
+    <import resource="applicationContext-jdbc.xml"/>
+    <!--“xmlns=”指定默认命名空间是beans-->
+    <!--xsi声明XML Schema实例名称空间-->
+    <!--    使用xsi:schemaLocation属性指定名称空间和模式文件位置-->
+    <bean id="mouse" class="learn.Mouse"/>
+    <bean id="computer" class="learn.Computer">
+        <constructor-arg ref="mouse"/>
+    </bean>
+
+    <bean name="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+    <bean id="propertyConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property name="locations">
+            <list>
+                <value>/WEB-INF/classes/dbconfig.properties</value>
+            </list>
+        </property>
+    </bean>
+</beans>
