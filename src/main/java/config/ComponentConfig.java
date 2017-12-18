@@ -10,4 +10,5 @@ import org.springframework.context.annotation.Configuration;
 @ComponentScan(basePackages = {"controller","service","dao","learn"})
 public class ComponentConfig {
 
+
 }

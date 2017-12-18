@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.1//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <properties  resource="WEB_INF/classes/resources/dbconfig.properties">
+        <property name="username" value="花儿"/>
+    </properties>
+    <typeAliases>
+        <package name="entity"/>
+    </typeAliases>
+    <settings>
+        <setting name="cacheEnabled" value="true"/>
+        <setting name="lazyLoadingEnabled" value="true"/>
+        <setting name="multipleResultSetsEnabled" value="true"/>
+        <setting name="useColumnLabel" value="true"/>
+        <setting name="useGeneratedKeys" value="false"/>
+        <setting name="autoMappingBehavior" value="PARTIAL"/>
+        <setting name="autoMappingUnknownColumnBehavior" value="WARNING"/>
+        <setting name="defaultExecutorType" value="SIMPLE"/>
+        <setting name="defaultStatementTimeout" value="25"/>
+        <setting name="defaultFetchSize" value="100"/>
+        <setting name="safeRowBoundsEnabled" value="false"/>
+        <setting name="mapUnderscoreToCamelCase" value="false"/>
+        <setting name="localCacheScope" value="SESSION"/>
+        <setting name="jdbcTypeForNull" value="OTHER"/>
+        <setting name="lazyLoadTriggerMethods" value="equals,clone,hashCode,toString"/>
+    </settings>
+    <!--重写类型处理器或创建你自己的类型处理器来处理不支持的或非标准的类型
+    还有要使用处理具体枚举类型时，可以查询官方文档-->
+    <typeHandlers>
+        <typeHandler handler="ExampleTypeHandler"/>
+    </typeHandlers>
+    <!--MyBatis 每次创建结果对象的新实例时，它都会使用一个对象工厂（ObjectFactory）实例来完成-->
+    <objectFactory type="ExampleObjectFactory">
+        <property name="someProperty" value="100"/>
+    </objectFactory>
+<!--    通过 MyBatis 提供的强大机制，只需实现Mybatis的拦截器 Interceptor 接口，并指定了想要拦截的方法签名即可。-->
+    <plugins>
+        <plugin interceptor="ExamplePlugin">
+            <property name="someProperty" value="100"/>
+        </plugin>
+    </plugins>
+</configuration>
