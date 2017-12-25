@@ -92,8 +92,5 @@ public class LoginController {
             return "redirect:/user/registerView";
         }
 
-
     }
-
-
 }
