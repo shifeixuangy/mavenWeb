@@ -9,7 +9,8 @@
   To change this template use File | Settings | File Templates.
 --%>
 
-<c:set var="ctx" value="${pageContext.request.contextPath}"></c:set><html>
+<c:set var="ctx" value="${pageContext.request.contextPath}"></c:set>
+<html>
 <head>
     <title>mapper</title>
     <link rel="stylesheet" href="${ctx}/static/css/bootstrap-3.3.5.min.css"/>
@@ -17,6 +18,11 @@
 </head>
 <body>
 <p style="color: blue">首页</p>
+<form id ="book">
+    <input type="text" name="bookName"/>
+    <input type="text" name="bookTime"/>
+    <input type="text" name="author"/>
+</form>
 
 <button type="button" onclick="seleteData()">查询</button>
 <button type="button" onclick="updateData()">修改</button>
@@ -28,7 +34,7 @@
             url: '/mybatis/select',
             type: 'POST', //GET
             async: false,    //或false,是否异步
-            data: $("#registerUser").serializeArray(),
+            data: $("#book").serializeArray(),
             timeout: 5000,    //超时时间
             dataType: 'json',    //返回的数据格式：json/xml/html/script/jsonp/text
             beforeSend: function (xhr) {
@@ -55,7 +61,7 @@
             url: '/mybatis/update',
             type: 'POST', //GET
             async: false,    //或false,是否异步
-            data: $("#registerUser").serializeArray(),
+            data: $("#book").serializeArray(),
             timeout: 5000,    //超时时间
             dataType: 'json',    //返回的数据格式：json/xml/html/script/jsonp/text
             beforeSend: function (xhr) {
@@ -82,7 +88,7 @@
             url: '/mybatis/delete',
             type: 'POST', //GET
             async: false,    //或false,是否异步
-            data: $("#registerUser").serializeArray(),
+            data: $("#book").serializeArray(),
             timeout: 5000,    //超时时间
             dataType: 'json',    //返回的数据格式：json/xml/html/script/jsonp/text
             beforeSend: function (xhr) {

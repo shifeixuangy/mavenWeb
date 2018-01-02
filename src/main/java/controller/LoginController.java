@@ -82,7 +82,6 @@ public class LoginController {
         String sql = "SELECT * from dm_user where login_name =?";
         PreparedStatement ps = conn.prepareStatement(sql);
         ps.setString(1, user.getLoginName());
-
         ResultSet rs = ps.executeQuery();
         if (rs.next()) {
             ps.close();

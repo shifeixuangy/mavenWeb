@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.1//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
-    <properties  resource="WEB_INF/classes/resources/dbconfig.properties">
+    <properties >
         <property name="username" value="花儿"/>
     </properties>
 
     <settings>
         <setting name="cacheEnabled" value="true"/>
-        <setting name="lazyLoadingEnabled" value="true"/>
+        <!--<setting name="lazyLoadingEnabled" value="true"/> 缺少CGLIB类 ，无法使用-->
         <setting name="multipleResultSetsEnabled" value="true"/>
         <setting name="useColumnLabel" value="true"/>
         <setting name="useGeneratedKeys" value="false"/>
         <setting name="autoMappingBehavior" value="PARTIAL"/>
-        <setting name="autoMappingUnknownColumnBehavior" value="WARNING"/>
+        <!--<setting name="autoMappingUnknownColumnBehavior" value="NONE"/>-->
         <setting name="defaultExecutorType" value="SIMPLE"/>
         <setting name="defaultStatementTimeout" value="25"/>
-        <setting name="defaultFetchSize" value="100"/>
+        <!--<setting name="defaultFetchSize" value="100"/>-->
         <setting name="safeRowBoundsEnabled" value="false"/>
         <setting name="mapUnderscoreToCamelCase" value="false"/>
         <setting name="localCacheScope" value="SESSION"/>
@@ -23,20 +23,21 @@
         <setting name="lazyLoadTriggerMethods" value="equals,clone,hashCode,toString"/>
     </settings>
     <typeAliases>
-        <package name="entity"/>
+        <typeAlias alias="User" type="entity.User"/>
+        <typeAlias alias="hashMap" type="java.util.HashMap"/>
     </typeAliases>
     <!--重写类型处理器或创建你自己的类型处理器来处理不支持的或非标准的类型
     还有要使用处理具体枚举类型时，可以查询官方文档-->
     <typeHandlers>
-        <typeHandler handler="ExampleTypeHandler"/>
+        <typeHandler handler="base_mybatis.ExampleTypeHandler"/>
     </typeHandlers>
     <!--MyBatis 每次创建结果对象的新实例时，它都会使用一个对象工厂（ObjectFactory）实例来完成-->
-    <objectFactory type="ExampleObjectFactory">
+    <objectFactory type="base_mybatis.ExampleObjectFactory">
         <property name="someProperty" value="100"/>
     </objectFactory>
 <!--    通过 MyBatis 提供的强大机制，只需实现Mybatis的拦截器 Interceptor 接口，并指定了想要拦截的方法签名即可。-->
     <plugins>
-        <plugin interceptor="ExamplePlugin">
+        <plugin interceptor="base_mybatis.ExamplePlugin">
             <property name="someProperty" value="100"/>
         </plugin>
     </plugins>
@@ -45,21 +46,22 @@
             <transactionManager type="JDBC">
                 <property name="..." value="..."/>
             </transactionManager>
-            <dataSource type="POOLED">
-                <property name="driver" value="${driverClassName}"/>
-                <property name="url" value="${url}"/>
-                <property name="username" value="${username}"/>
-                <property name="password" value="${password}"/>
+            <dataSource type="UNPOOLED">
+                <property name="driver" value="com.mysql.jdbc.Driver"/>
+                <property name="url" value="jdbc:mysql://localhost:3306/book_management?serverTimezone=UTC&amp;useUnicode=true&amp;characterEncoding=utf-8&amp;useSSL=false"/>
+                <property name="username" value="root"/>
+                <property name="password" value="medo123"/>
             </dataSource>
         </environment>
     </environments>
+    <!--需要添加实现方式才可以根据不同的数据库厂商执行不同的sql语句
     <databaseIdProvider type="DB_VENDOR">
         <property name="SQL Server" value="sqlserver"/>
         <property name="DB2" value="db2"/>
         <property name="Oracle" value="oracle" />
         <property name="Mysql" value="mysql" />
-    </databaseIdProvider>
+    </databaseIdProvider>-->
     <mappers>
-        <mapper class="mapper"/>
+        <mapper resource="base_mybatis/MybatisMapper.xml"/>
     </mappers>
 </configuration>

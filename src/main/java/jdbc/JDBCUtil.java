@@ -17,7 +17,7 @@ public class JDBCUtil {
         Connection connection =null;
         try {
             String username = "root";
-            String password = "sfx123456";
+            String password = "medo123";
             Class.forName("com.mysql.jdbc.Driver");
             connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/book_management?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8&useSSL=false", username, password);
             if (connection != null) {

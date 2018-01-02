@@ -13,6 +13,15 @@ public class User implements Serializable {
     private String userName;
     private String sex;
     private Integer age;
+    private String createTime;
+
+    public String getCreateTime() {
+        return createTime;
+    }
+
+    public void setCreateTime(String createTime) {
+        this.createTime = createTime;
+    }
 
     public String getLoginName() {
         return loginName;
