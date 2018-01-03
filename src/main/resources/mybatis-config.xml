@@ -9,6 +9,7 @@
         <setting name="cacheEnabled" value="true"/>
         <!--<setting name="lazyLoadingEnabled" value="true"/> 缺少CGLIB类 ，无法使用-->
         <setting name="multipleResultSetsEnabled" value="true"/>
+        <setting name="logImpl" value="STDOUT_LOGGING" />
         <setting name="useColumnLabel" value="true"/>
         <setting name="useGeneratedKeys" value="false"/>
         <setting name="autoMappingBehavior" value="PARTIAL"/>
@@ -43,6 +44,7 @@
     </plugins>
     <environments default="development">
         <environment id="development">
+            <!--设置用JDBC控制事务，默认不自动提交-->
             <transactionManager type="JDBC">
                 <property name="..." value="..."/>
             </transactionManager>

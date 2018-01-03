@@ -22,23 +22,30 @@ public class MybatisController {
 
     @RequestMapping("select")
     @ResponseBody
-    public Map getData(HashMap map, ServletRequest servletRequest) throws IOException{
-        SqlSessionFactoryBuilder build = new SqlSessionFactoryBuilder();
-        String realPath = servletRequest.getServletContext().getRealPath("/");
-        String resource = realPath+"mybatis-config.xml";
-        InputStream is = Resources.getResourceAsStream("mybatis-config.xml");
-        SqlSession ss =build.build(is).openSession();
-        MybatisMapper mm =ss.getMapper(MybatisMapper.class);
-        HashMap user1 =mm.getSomeOneByid1();
-        List user2 =mm.getSomeOneByid2();
-        User user3 =mm.getSomeOneByid3();
-        User user4 =mm.getSomeOneByid4();
-        boolean bl1 = mm.insertSome1("12341","123422");
-        User user =new User();
-        user.setLoginName("144fff");
-        user.setPassword("25535fd");
-        boolean bl2 = mm.insertSome2(user);
-        map.put("user",user);
+    public Map getData(HashMap map, ServletRequest servletRequest) {
+        try {
+            SqlSessionFactoryBuilder build = new SqlSessionFactoryBuilder();
+            String realPath = servletRequest.getServletContext().getRealPath("/");
+            String resource = realPath+"mybatis-config.xml";
+            InputStream is = Resources.getResourceAsStream("mybatis-config.xml");
+            SqlSession ss =build.build(is).openSession();
+            MybatisMapper mm =ss.getMapper(MybatisMapper.class);
+            HashMap user1 =mm.getSomeOneByid1();
+            List user2 =mm.getSomeOneByid2();
+            User user3 =mm.getSomeOneByid3();
+            User user4 =mm.getSomeOneByid4();
+            mm.insertSome0();
+            int x = mm.insertSome1("222222","232323");
+             mm.insertSome2("22211221","44222");
+            User user =new User();
+            user.setLoginName("fffff");
+            user.setPassword("ddddd");
+              mm.insertSome3(user);
+            ss.commit();
+            map.put("user",user);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         return map;
     }
 
