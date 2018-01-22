@@ -64,6 +64,6 @@
         <property name="Mysql" value="mysql" />
     </databaseIdProvider>-->
     <mappers>
-        <mapper resource="base_mybatis/MybatisMapper.xml"/>
+        <mapper resource="base_mybatis/MybatisMapper-sqlmap.xml"/>
     </mappers>
 </configuration>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="dataSource" ref="dataSource" />
+        <!--配置映射器-->
+        <property name="mapperLocations">
+            <list>
+                <value>classpath*:/base_mybatis/*-sqlmap.xml</value>
+            </list>
+        </property>
+        <property name="transactionFactory">
+            <bean class="org.apache.ibatis.transaction.managed.ManagedTransactionFactory" />
+        </property>
+    </bean>
+
+    <!-- 通过扫描的模式，扫描mapper目录下，所有的mapper都继承SqlMapper接口的接口 -->
+    <!-- 可使用逗号或分号建立多个basePackage -->
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <!-- basePackage 多值可分号分隔 -->
+        <property name="basePackage"
+                  value="base_mybatis" />
+        <property name="markerInterface" value="com.medo.sys.trash.Info.core.base.BaseSqlMapper" />
+        <property name="sqlSessionFactoryBeanName" value="mySqlSessionFactory" />
+    </bean>
+</beans>

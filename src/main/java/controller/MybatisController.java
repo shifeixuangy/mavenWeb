@@ -1,6 +1,7 @@
 package controller;
 
 import base_mybatis.MybatisMapper;
+import com.alibaba.druid.util.ThreadLocalRandom;
 import entity.User;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
@@ -12,9 +13,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import javax.servlet.ServletRequest;
 import java.io.IOException;
 import java.io.InputStream;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 @Controller
 @RequestMapping("/mybatis")
@@ -26,23 +25,40 @@ public class MybatisController {
         try {
             SqlSessionFactoryBuilder build = new SqlSessionFactoryBuilder();
             String realPath = servletRequest.getServletContext().getRealPath("/");
-            String resource = realPath+"mybatis-config.xml";
+            String resource = realPath + "mybatis-config.xml";
             InputStream is = Resources.getResourceAsStream("mybatis-config.xml");
-            SqlSession ss =build.build(is).openSession();
-            MybatisMapper mm =ss.getMapper(MybatisMapper.class);
-            HashMap user1 =mm.getSomeOneByid1();
-            List user2 =mm.getSomeOneByid2();
-            User user3 =mm.getSomeOneByid3();
-            User user4 =mm.getSomeOneByid4();
+            SqlSession ss = build.build(is).openSession();
+            MybatisMapper mm = ss.getMapper(MybatisMapper.class);
+            Random ra = new Random(System.currentTimeMillis());
+            //查询
+            HashMap select1 = mm.getSomeOneByid1();
+            List select2 = mm.getSomeOneByid2();
+            User select3 = mm.getSomeOneByid3();
+            User select4 = mm.getSomeOneByid4();
+            List list = new ArrayList();
+            list.add("123");
+            list.add("1234");
+            List select5 =mm.getSome5(list);
+            //插入数据
+
             mm.insertSome0();
-            int x = mm.insertSome1("222222","232323");
-             mm.insertSome2("22211221","44222");
-            User user =new User();
-            user.setLoginName("fffff");
-            user.setPassword("ddddd");
-              mm.insertSome3(user);
+            mm.insertSome1(String.valueOf(ra.nextLong()),String.valueOf(ra.nextLong()));
+            mm.insertSome2(String.valueOf(ra.nextLong()), String.valueOf(ra.nextLong()));
+            User user = new User();
+            user.setLoginName(String.valueOf(ra.nextLong()));
+            user.setPassword(String.valueOf(ra.nextLong()));
+            mm.insertSome3(user);
+            //更新
+
+            User userA = new User();
+            User userB = new User();
+            userA.setPassword("123");
+            userA.setLoginName(String.valueOf(ra.nextLong()));
+            userB.setLoginName("1234");
+            userB.setPassword(String.valueOf(ra.nextLong()));
+            mm.update1(userA);
+            mm.update2(userB);
             ss.commit();
-            map.put("user",user);
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -51,11 +67,10 @@ public class MybatisController {
 
     @RequestMapping("update")
     @ResponseBody
-    public Map updateData(HashMap map){
+    public Map updateData(HashMap map) {
 
         return map;
     }
-
 
 
 }

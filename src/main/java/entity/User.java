@@ -15,6 +15,22 @@ public class User implements Serializable {
     private Integer age;
     private String createTime;
 
+    public User(){
+
+    }
+    public User(String loginName, String password, String userName, String sex, Integer age, String createTime) {
+        this.loginName = loginName;
+        this.password = password;
+        this.userName = userName;
+        this.sex = sex;
+        this.age = age;
+        this.createTime = createTime;
+    }
+    public User(String loginName, String password) {
+        this.loginName = loginName;
+        this.password = password;
+    }
+
     public String getCreateTime() {
         return createTime;
     }

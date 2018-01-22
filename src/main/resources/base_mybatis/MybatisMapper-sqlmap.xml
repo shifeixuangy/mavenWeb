@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN" "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+
+<mapper namespace="base_mybatis.MybatisMapper">
+    <resultMap id="bookManagement" type="User">
+        <!--        column的值是列或者列的重命名标签，就是as 的值-->
+        <result column="login_name" javaType="String" property="loginName"/>
+        <result column="password" javaType="String" property="password"/>
+        <result column="sex" javaType="String" property="sex"/>
+        <result column="age" javaType="String" property="age"/>
+        <result column="create_time" javaType="String" property="createTime"/>
+    </resultMap>
+    <sql id="sql_dm_user">
+        login_name loginName,password password,sex sex,age age,create_time createTime
+    </sql>
+    <sql id="bookManagement_where">
+        <if test="loginName!=null">
+            AND login_name like #{loginName}
+        </if>
+        <if test="password!=null">
+            AND password like #{%password}
+        </if>
+        <if test="sex!=null">
+            AND sex like #{sex}
+        </if>
+        <if test="age!=null">
+            AND age like #{age}
+        </if>
+    </sql>
+    <select id="getSomeOneByid1" resultType="HashMap">
+        select
+        <include refid="sql_dm_user"/>
+        from dm_user where
+
+        login_name ="123"
+
+
+    </select>
+
+    <select id="getSomeOneByid2" resultType="User">
+        /*加完驼峰转化映射之后，可以直接查询属性名，会自动映射*/
+        select login_name,password,sex from dm_user
+        <where>
+            <include refid="bookManagement_where"/>
+        </where>
+    </select>
+    <select id="getSomeOneByid3" resultType="User">
+        /*别名可以直接字段加空格加别名 或者字段加as 再加别名，loginName as "loginName"*/
+        select login_name loginName,password password,sex as sex from dm_user where login_name ="123"
+        <include refid="bookManagement_where"/>
+    </select>
+
+    <select id="getSomeOneByid4" resultType="User" resultMap="bookManagement">
+/*加resultMap映射之后。select 直接加列名，会被转换，*/
+        select login_name,password password,sex sex from dm_user where login_name ="123"
+    </select>
+    <select id="getSome5" resultType="User" resultMap="bookManagement">
+        /*加resultMap映射之后。select 直接加列名，会被转换，*/
+        select <include refid="sql_dm_user"/> from dm_user where login_name IN
+        <foreach item ="item" index ="index" collection ="list"  open="(" separator="," close=")">
+            #{item}
+        </foreach>
+    </select>
+
+    <!--    <insert id="insertSome0" >
+            /*判断参数映射的名称问题*/
+            insert into dm_user (login_name, password) VALUES (
+            "11123124dff","1112fhhhh"
+            )
+        </insert>-->
+    <insert id="insertSome1">
+    /*通过序号进行传参*/
+    insert into dm_user (login_name, password) VALUES (#{0},#{1})
+    </insert>
+    <insert id="insertSome2">
+        /*dao或者mapper层添加注解 定义传递参数名称即可，实验发现直接调用定义的参数名称是不行的*/
+        insert into dm_user (login_name, password) VALUES (#{arg1},#{arg2})
+    </insert>
+
+    <insert id="insertSome3" parameterType="User">
+        /*判断参数映射的名称问题*/
+        insert into dm_user (login_name, password) VALUES (
+        #{loginName,jdbcType=VARCHAR},
+        #{password,javaType = String,jdbcType=VARCHAR}
+        )
+    </insert>
+    <update id="update1">
+        update dm_user set
+        password = #{password},
+        sex = #{sex},
+        age = #{age}
+        where login_name = #{loginName}
+    </update>
+    <update id="update2">
+        update dm_user
+        <set>
+            <if test="password!=null">
+                password = #{password},
+            </if>
+            <if test="password!=null">
+                sex = #{sex},
+            </if>
+            <if test="password!=null">
+                age = #{age}
+            </if>
+        </set>
+        where login_name = #{loginName}
+    </update>
+
+
+</mapper>
