@@ -1,7 +1,6 @@
 package controller;
 
 import base_mybatis.MybatisMapper;
-import com.alibaba.druid.util.ThreadLocalRandom;
 import entity.User;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
@@ -9,8 +8,11 @@ import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
+import util.ExportExcel;
 
 import javax.servlet.ServletRequest;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.*;
@@ -19,7 +21,9 @@ import java.util.*;
 @RequestMapping("/mybatis")
 public class MybatisController {
 
-    @RequestMapping("select")
+    private SqlSession sqlSession;
+
+    @RequestMapping("/select")
     @ResponseBody
     public Map getData(HashMap map, ServletRequest servletRequest) {
         try {
@@ -38,11 +42,11 @@ public class MybatisController {
             List list = new ArrayList();
             list.add("123");
             list.add("1234");
-            List select5 =mm.getSome5(list);
+            List select5 = mm.getSome5(list);
             //插入数据
 
             mm.insertSome0();
-            mm.insertSome1(String.valueOf(ra.nextLong()),String.valueOf(ra.nextLong()));
+            mm.insertSome1(String.valueOf(ra.nextLong()), String.valueOf(ra.nextLong()));
             mm.insertSome2(String.valueOf(ra.nextLong()), String.valueOf(ra.nextLong()));
             User user = new User();
             user.setLoginName(String.valueOf(ra.nextLong()));
@@ -65,10 +69,17 @@ public class MybatisController {
         return map;
     }
 
-    @RequestMapping("update")
+    @RequestMapping("/update")
     @ResponseBody
-    public Map updateData(HashMap map) {
+    public Map updateData(HashMap map, HttpServletRequest Request, HttpServletResponse response) throws Exception {
+        ExportExcel.renderExcel(response, Request, "猜猜.xls", ExportExcel.jsonToObj(ExportExcel.getJsonString()));
+        return map;
+    }
 
+    @RequestMapping("/delete")
+    @ResponseBody
+    public Map deleteData(HashMap map) throws Exception {
+        map = sqlSession.getMapper(MybatisMapper.class).getSomeOneByid1();
         return map;
     }
 

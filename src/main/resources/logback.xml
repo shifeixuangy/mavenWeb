@@ -1,6 +1,6 @@
 <configuration scan ="true" scanPeriod="60" debug ="true">
     <property name ="APP_NAME" value ="mavenWeb"></property>
-    <property name="LOG_DIR" value="D:/temp/logs/trashInfoManager/" />
+    <property name="LOG_DIR" value="D:/temp/logs/mavenWeb/" />
     <timestamp key="bySecond" datePattern="yyyyMMdd'T'HHmmss"/>
 <!--    设置将当前时间（解析配置文件的时间）转换为字符串的模式，遵循java.txt.SimpleDateFormat的格式。-->
     <contextName>${APP_NAME}</contextName>

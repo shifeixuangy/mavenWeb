@@ -31,7 +31,6 @@
         select
         <include refid="sql_dm_user"/>
         from dm_user where
-
         login_name ="123"
 
 
@@ -56,8 +55,10 @@
     </select>
     <select id="getSome5" resultType="User" resultMap="bookManagement">
         /*加resultMap映射之后。select 直接加列名，会被转换，*/
-        select <include refid="sql_dm_user"/> from dm_user where login_name IN
-        <foreach item ="item" index ="index" collection ="list"  open="(" separator="," close=")">
+        select
+        <include refid="sql_dm_user"/>
+        from dm_user where login_name IN
+        <foreach item="item" index="index" collection="list" open="(" separator="," close=")">
             #{item}
         </foreach>
     </select>

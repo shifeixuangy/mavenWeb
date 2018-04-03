@@ -5,7 +5,10 @@
 
 
     <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
-        <property name="dataSource" ref="dataSource" />
+        <property name="dataSource" ref="dataSource"/>
+        <!--任意环境,数据源 和 MyBatis 的事务管理器都会被忽略。SqlSessionFactoryBean
+        会创建它自己的,使用这些 值定制 MyBatis 的 Environment 时是需要的。-->
+        <property name="configLocation" value="classpath:mybatis-config.xml" />
         <!--配置映射器-->
         <property name="mapperLocations">
             <list>
@@ -13,17 +16,23 @@
             </list>
         </property>
         <property name="transactionFactory">
-            <bean class="org.apache.ibatis.transaction.managed.ManagedTransactionFactory" />
+            <bean class="org.apache.ibatis.transaction.managed.ManagedTransactionFactory"/>
         </property>
     </bean>
-
-    <!-- 通过扫描的模式，扫描mapper目录下，所有的mapper都继承SqlMapper接口的接口 -->
-    <!-- 可使用逗号或分号建立多个basePackage -->
+<!--
+     通过扫描的模式，扫描mapper目录下，所有的mapper都继承SqlMapper接口的接口
+     包下的类需要使用@MapperScan注解
+     可使用逗号或分号建立多个basePackage-->
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
         <!-- basePackage 多值可分号分隔 -->
         <property name="basePackage"
-                  value="base_mybatis" />
-        <property name="markerInterface" value="com.medo.sys.trash.Info.core.base.BaseSqlMapper" />
-        <property name="sqlSessionFactoryBeanName" value="mySqlSessionFactory" />
+                  value="base_mybatis"/>
+        <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
+    </bean>
+   <!-- 注入到实现类中，可直接调用
+    通过sqlSessionDaoSupport，实现类直接继承后；使用getSqlSession()方法可以获取sqlSession，很常用的方式。-->
+    <bean id="sqlSession" class="org.mybatis.spring.SqlSessionTemplate">
+        <constructor-arg index="0" ref="sqlSessionFactory"/>
+        <constructor-arg index="1" value="BATCH"/>
     </bean>
 </beans>

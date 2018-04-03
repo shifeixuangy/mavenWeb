@@ -48,7 +48,7 @@ public class LoginController {
      */
     @RequestMapping(value = "/register")
     @ResponseBody
-    public void register(User user, HttpServletRequest request, Map model) throws SQLException {
+    public void register(@Valid User user, HttpServletRequest request, Map model) throws SQLException {
       /*  out.println(user);
         model.put("ha", user);
         Connection conn = JDBCUtil.getConnection();

@@ -63,7 +63,7 @@
         <property name="Oracle" value="oracle" />
         <property name="Mysql" value="mysql" />
     </databaseIdProvider>-->
-    <mappers>
+<!--    <mappers>
         <mapper resource="base_mybatis/MybatisMapper-sqlmap.xml"/>
-    </mappers>
+    </mappers>-->
 </configuration>

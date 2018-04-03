@@ -8,7 +8,7 @@ import java.util.HashMap;
 import java.util.List;
 
 public interface MybatisMapper {
-    public abstract HashMap getSomeOneByid1();
+    HashMap getSomeOneByid1();
     List<User> getSomeOneByid2();
     User getSomeOneByid3();
     User getSomeOneByid4();

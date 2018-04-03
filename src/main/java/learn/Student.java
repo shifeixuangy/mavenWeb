@@ -11,6 +11,7 @@ public class Student {
     @Autowired
     private Teacher teacher;
     public String teachersJob(){
+
         return  teacher.getJob();
     }
 }
