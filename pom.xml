@@ -49,6 +49,14 @@
                     <contextPath>/</contextPath>
                 </configuration>
             </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>7</source>
+                    <target>7</target>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
     <repositories>
@@ -260,6 +268,16 @@
             <groupId>net.sf.ezmorph</groupId>
             <artifactId>ezmorph</artifactId>
             <version>1.0.6</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi</artifactId>
+            <version>3.8</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-scratchpad</artifactId>
+            <version>3.8</version>
         </dependency>
     </dependencies>
 

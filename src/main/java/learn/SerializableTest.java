@@ -7,23 +7,26 @@ import java.io.*;
  */
 public class SerializableTest {
     public static void main(String[] args) throws IOException {
-        Mouse mouse =new Mouse();
+        Mouse mouse = new Mouse();
         mouse.setColor("红色");
-        Computer computer =new Computer(mouse);
+        Computer computer = new Computer(mouse);
         computer.setKeyBorder("罗技");
         computer.setMonitor("华硕");
 /*        monitor用transient进行修饰，表示monitor不进行序列化
+        序列化的时候，系统会把序列化的类的serialVersionUID写入到序列化文件中（有可能其他地方）,
+        当去反序列化的时候，系统会去检测文件中的serialVersionUID，
+        如果类中的值和文件的值一致，那么就可以反序列化成功，反之失败。
                 序列化用于两种：远程调用和存于数据库和文件。
                 把对象转换 为二进制数据(如网络传输,存储数据库等),必须实现序列化接口 (java.io.Serializable).
                  把对象保存 在介质上(如写文件,读文件不是), 没有接口实现,一般指方法调用. */
-        ObjectOutputStream objectOutputStream =new ObjectOutputStream(new FileOutputStream("hehe.txt"));
+        ObjectOutputStream objectOutputStream = new ObjectOutputStream(new FileOutputStream("hehe.txt"));
         objectOutputStream.writeObject(computer);
         objectOutputStream.flush();
         objectOutputStream.close();
         ObjectInputStream objectInputStream = new ObjectInputStream(new FileInputStream("hehe.txt"));
         try {
-            Computer computerIns =(Computer) objectInputStream.readObject();
-            System.out.println(computerIns.getMonitor()+"鼠标："+computerIns.getMouse().getColor());
+            Computer computerIns = (Computer) objectInputStream.readObject();
+            System.out.println(computerIns.getMonitor() + "鼠标：" + computerIns.getMouse().getColor());
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
