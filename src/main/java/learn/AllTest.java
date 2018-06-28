@@ -5,8 +5,8 @@ package learn;
  */
 public class AllTest {
     public static void main(String[] args) {
-        DefaultMethod defaultMethod =new DefaultMethod("麻辣香锅");
-        defaultMethod.eat(defaultMethod.getFood());
+      /*  DefaultMethod defaultMethod =new DefaultMethod("麻辣香锅");
+        defaultMethod.eat(defaultMethod.getFood());*/
 
     }
 }
